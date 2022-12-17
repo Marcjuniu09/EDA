@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 void insertiosort(item *v, int l, int r){ //item é uma macro
 //ordenando o primeiro elemento
     for(int i = r; i > l; i--){
@@ -26,8 +18,6 @@ for (int = l +2; i <= r; i++){
 
 //Fazendo em macro
 #define cmpexch(a, b){if (less(a, b)) exch(a, b)}
-
-
 
 
 //fazendo uma função para ir procurando um valor no vetor de forma que a gente vai dividindo o vetor por 2
