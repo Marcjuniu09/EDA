@@ -2,7 +2,7 @@ typedef int Item;
 #define less(A, B) (A < B)
 #define exch(A, B) { Item t = A; A = B; B = t; }
 
-int numeros[7] = {1, 2, 3, 4, 5, 6, 7};
+int numeros[7] = {10, 8, 1, 2, 9, 5, 2};
 
 void selectionSort(Item *v, int l, int r){
     int i, j, min;
@@ -14,5 +14,13 @@ void selectionSort(Item *v, int l, int r){
         }
         exch(v[i], v[min]);
     }
+}
+
+int main(){
+    selectionSort(numeros, 0, 6);
+    for(int i = 0; i < 7; i++){
+        printf("%d ", numeros[i]);
+    }
+    return 0;
 }
 
